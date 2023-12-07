@@ -1,5 +1,4 @@
 theme: jekyll-theme-minimal
-title: mruanova's GitHub page
-description: Learn about Jekyll minimal theme on GitHub Pages!
-layout: page
-permalink: /src
+title: Color Picker
+description: Angular
+permalink: /src/index.html
