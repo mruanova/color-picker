@@ -23,8 +23,8 @@ title: Your Project Title
 description: Your project description
 
 # GitHub Pages branch
-# Ensure that your Angular app is built in the 'docs' folder
-# If using Angular CLI, you can build with: ng build --prod --output-path docs
+# Ensure that your Angular app is built in the 'dist'
+# If using Angular CLI, you can build with: ng build --prod --output-path src/dist
 baseurl: "/color-picker"
 url: "https://mrunova.github.io"
 
@@ -39,6 +39,19 @@ exclude:
   - LICENSE
 
 # Angular-specific configuration
+defaults:
+  - scope:
+      path: ""
+      type: "angular"
+    values:
+      layout: "angular"
+
+# Specify the folder where the built Angular app is located
+# Adjust the path based on your Angular project structure
+include:
+  - dist
+
+# Specify the default layout file for Angular pages
 defaults:
   - scope:
       path: ""
