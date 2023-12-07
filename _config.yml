@@ -1,34 +1,11 @@
 # _config.yml
 
-theme: jekyll-theme-minimal
-title: Color Picker
-description: Angular
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Angular configuration
-defaults:
-  - scope:
-      path: ""
-      type: "angular"
-    values:
-      layout: "angular"
-
 # GitHub Pages settings
-title: Your Project Title
-description: Your project description
+title: Color Picker
+description: An Angular color picker project
 
 # GitHub Pages branch
-# Ensure that your Angular app is built in the 'dist'
-# If using Angular CLI, you can build with: ng build --prod --output-path src/dist
-baseurl: "/color-picker"
-url: "https://mrunova.github.io"
-
-# GitHub Pages deployment branch
+# Set to 'main' or 'master' depending on your default branch
 publish_branch: main
 
 # Exclude these files and folders from the GitHub Pages build
@@ -47,14 +24,9 @@ defaults:
       layout: "angular"
 
 # Specify the folder where the built Angular app is located
-# Adjust the path based on your Angular project structure
 include:
-  - dist
+  - src
 
-# Specify the default layout file for Angular pages
-defaults:
-  - scope:
-      path: ""
-      type: "angular"
-    values:
-      layout: "angular"
+# Base URL for the project
+baseurl: "/color-picker"
+url: "https://mruanova.github.io"
